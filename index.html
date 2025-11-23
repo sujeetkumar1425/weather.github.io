@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  </head>
+
+<body>
+  
+  <div class="app-container">
+    <header>
+      <h1>Weather Forecast</h1>
+      <input type="text" id="search" placeholder="Search city...">
+    </header>
+
+    <main>
+      <div class="weather-card">
+        <div class="location">San Francisco, CA</div>
+        <div class="date">Monday, September 9</div>
+        <div class="weather-info">
+          <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" class="weather-icon"/>
+          <div class="temp">21°C</div>
+          <div class="description">Clear Sky</div>
+          <input type="text" id="search" placeholder="Search city...">
+        </div>
+        <div class="extra-info">
+          <div>Humidity: 60%</div>
+          <div>Wind: 15 km/h</div>
+        </div>
+        
+        <!-- AQI Section -->
+        <div class="aqi-section">
+          <h3>Air Quality Index</h3>
+          <div class="aqi-info">
+            <div class="aqi-value" id="aqi-value">Good</div>
+            <div class="aqi-details">
+              <div>PM2.5: <span id="pm25">8.88</span> μg/m³</div>
+              <div>PM10: <span id="pm10">19.61</span> μg/m³</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rain Forecast Section -->
+        <div class="rain-section">
+          <h3>Rain Forecast</h3>
+          <div class="rain-info">
+            <div class="rain-today">
+              <span>Today: </span>
+              <span id="rain-today">0.0 mm</span>
+            </div>
+            <div class="rain-forecast" id="rain-forecast">
+              <!-- Rain forecast will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 WeatherApp. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src ="style.js">  </script>
+</body>
+</html>
